@@ -1,8 +1,8 @@
 module.exports = {
   title: `PurpleCode Tech`,
-  description: `IT 동아리 PurpleCode Leader Tech Blog`,
+  description: `IT 동아리 PurpleCode Tech Blog`,
   author: `purplecode2020`,
-  introduction: `IT 동아리 PurpleCode의 회장직을 맞고 있으며 현재 FullStack Developer로 활동 중인 이재준입니다.`,
+  introduction: `IT 동아리 PurpleCode 의 회장직을 맞고 있으며 현재 FullStack Developer 활동 중인 이재준입니다.`,
   siteUrl: `https://purplecode.netlify.app`,
   social: {
     twitter: ``,
