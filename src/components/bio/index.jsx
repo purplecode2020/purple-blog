@@ -1,6 +1,12 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
+import {
+  AiFillGithub,
+  AiFillFacebook,
+  AiFillMail,
+  AiFillInstagram,
+} from 'react-icons/ai'
 
 import './index.scss'
 
@@ -30,7 +36,9 @@ export const Bio = () => (
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
                   {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
+                    <a href={`https://github.com/${social.github}`}>
+                      <AiFillGithub size="2em" />
+                    </a>
                   )}
                   {social.medium && (
                     <a href={`https://medium.com/${social.medium}`}>Medium</a>
@@ -42,12 +50,22 @@ export const Bio = () => (
                   )}
                   {social.facebook && (
                     <a href={`https://www.facebook.com/${social.facebook}`}>
-                      Facebook
+                      <AiFillFacebook size="2em" />
+                    </a>
+                  )}
+                  {social.instagram && (
+                    <a href={`https://www.instagram.com/${social.instagram}`}>
+                      <AiFillInstagram size="2em" />
                     </a>
                   )}
                   {social.linkedin && (
                     <a href={`https://www.linkedin.com/in/${social.linkedin}/`}>
                       LinkedIn
+                    </a>
+                  )}
+                  {social.mail && (
+                    <a href={`mailto:${social.mail}`}>
+                      <AiFillMail size="2em" />
                     </a>
                   )}
                 </p>
@@ -62,7 +80,7 @@ export const Bio = () => (
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile.png/" }) {
+    avatar: file(absolutePath: { regex: "/purple.jpg/" }) {
       childImageSharp {
         fixed(width: 72, height: 72) {
           ...GatsbyImageSharpFixed
@@ -79,6 +97,8 @@ const bioQuery = graphql`
           medium
           facebook
           linkedin
+          instagram
+          mail
         }
       }
     }
