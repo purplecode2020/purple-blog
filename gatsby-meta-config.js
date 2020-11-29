@@ -37,5 +37,5 @@ module.exports = {
   share: {
     facebookAppId: '671218186926369',
   },
-  ga: 'G-MMZ8GCE0C4', // change?...
+  ga: 'UA-184111996-1',
 }
