@@ -6,7 +6,7 @@ thumbnail: './img/gatsby.jpeg'
 draft: false
 ---
 
-![purplecode](./img/gatsby.jpeg)
+![gatsby](./img/gatsby.jpeg)
 
 > Gatsby로 블로그 시작하기
 
